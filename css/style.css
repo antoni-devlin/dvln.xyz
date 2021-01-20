@@ -1,0 +1,179 @@
+html {
+  font-family: Georgia, serif;
+}
+
+p, li {
+  font-size: 18px;
+  line-height: 27px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Arial, sans-serif;
+  font-kerning: normal;
+}
+
+a {
+  position: relative;
+}
+a::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+}
+a:hover::before {
+  visibility: visible;
+  width: 100%;
+}
+
+.main-nav {
+  padding: 5% 0 5% 20%;
+}
+.main-nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.main-nav li {
+  display: inline;
+  float: left;
+  padding: 20px 20px 20px 0;
+}
+.main-nav a {
+  color: black;
+  text-decoration: none;
+}
+.main-nav:hover {
+  color: gray;
+}
+.main-nav:hover::before {
+  background-color: gray;
+}
+
+.main-content {
+  max-width: 50vw;
+  margin: 0 auto;
+}
+.main-content .preview-image {
+  width: 100%;
+}
+.main-content svg.tag-icon {
+  width: 20px;
+  height: 20px;
+  float: left;
+  fill: red;
+}
+.main-content ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.main-content li {
+  display: inline;
+  float: left;
+  padding: 0 0 0 10px;
+}
+.main-content a {
+  color: black;
+  text-decoration: none;
+}
+.main-content a:hover {
+  color: red;
+}
+.main-content a:hover::before {
+  background-color: red;
+}
+.main-content article:not(:first-of-type) {
+  margin: 15% 0 0 0;
+}
+
+.post-preview p {
+  text-align: justify;
+}
+
+.tag-list .tag::after {
+  content: ", ";
+}
+.tag-list .tag:last-of-type::after {
+  content: "";
+}
+.tag-list .tag::after {
+  content: ", ";
+}
+
+.post .header-image {
+  width: 100%;
+}
+.post .body-image {
+  width: 100%;
+}
+.post .image-caption {
+  padding: 2px 0 0 0;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  color: #464646;
+  float: right;
+}
+.post .source::before {
+  content: "(";
+}
+.post .source::after {
+  content: ")";
+}
+.post .post-heading {
+  font-size: 42px;
+  margin: 10% 0 0 0;
+}
+.post .body-image + p, .post .image-caption + p {
+  padding: 5% 0 0 0;
+}
+
+.profile .headshot {
+  float: right;
+  width: 40%;
+  padding: 0 0 0 40px;
+}
+
+.cv {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: "work work-details" "work work-details" "education education-details";
+}
+
+.work {
+  grid-area: work;
+}
+
+.work-details {
+  grid-area: work-details;
+}
+
+.education {
+  grid-area: education;
+}
+
+.education-details {
+  grid-area: education-details;
+}
+
+footer {
+  margin: 5% 0 0 0;
+}
+footer p {
+  font-size: 12px;
+}
+
+/*# sourceMappingURL=style.scss.map */
+
+/*# sourceMappingURL=style.css.map */
