@@ -144,34 +144,15 @@ a:hover::before {
   padding: 0 0 0 40px;
 }
 
-.cv {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  grid-template-areas: "work work-details" "work work-details" "education education-details";
-}
-
-.work {
-  grid-area: work;
-}
-
-.work-details {
-  grid-area: work-details;
-}
-
-.education {
-  grid-area: education;
-}
-
-.education-details {
-  grid-area: education-details;
-}
-
 footer {
-  margin: 5% 0 0 0;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
 }
 footer p {
   font-size: 12px;
+  padding: 0 0 1% 1%;
 }
 
 /*# sourceMappingURL=style.scss.map */
